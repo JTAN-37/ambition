@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+			<div class="card border-0 p-3 shadow-sm text-center">
+				<h3>Current Weather for <i>{{ city }}</i></h3>
+				<img style="display: block; margin: 0 auto; width: 200px; height: 200px;" alt="weather" src="{{ icon_url }}">
+				<h4> {{ main_desc }} ({{ extra_desc}})</h4>
+				<h5 class="lead text-muted">Temperature: {{ temp }}°F</h5>
+				<h5 class="lead text-muted">Max Temperature: {{ temp }}°F</h5>
+				<h5 class="lead text-muted">Min Temperature: {{ temp }}°F</h5>
+				<h5 class="lead text-muted">Humidity: {{ humidity }}%</h5>
+				<h5 class="lead text-muted">Wind Speed: {{ wind_speed }} mph </h5>
+			</div>
+
+{% endblock content %}
